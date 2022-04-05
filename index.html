@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Estilos y preloads-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbius Software</title>
+    <link rel="preload" type="text/css" href="css/normalize.css" as="style" onload="this.rel='stylesheet'">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as ="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="resources/Proverbius-sw Logo HD.png" />
+
+    <link rel="preload" href="resources/webDevIcon.png" as="image">
+    <link rel="preload" href="resources/MovilDevIcon.png" as="image">
+    <link rel="preload" href="resources/ECommerceIco.png" as="image">
+
+    <link rel="preload" href="resources/facebook black.png" as="image">
+    <link rel="preload" href="resources/linkedin black.png" as="image">
+    <link rel="preload" href="resources/whatsap black.png" as="image">
+    <link rel="preload" href="resources/telegram black.png" as="image">
+</head>
+
+<body>
+    <!--Barra de Titulo-->
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <img class="header__mainlogo" src="resources/Proverbius-sw Logo HD.png" alt="main Logo">
+            </a>
+            <h1 class="header__maindev">
+                Proverbius Software
+            </h1>
+        </div>
+        <div class="menu">            
+            <nav class="navMenu">
+                <ul>
+                    <li><a class="navbar__item navbar__item--active" href="index.html">Inicio</a></li>
+                    <li><a class="navbar__item" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="navbar__item" href="productos.html">Desarrollo</a></li>
+                    <li><a class="navbar__item" href="webservices.html">Apps Web</a></li>
+                    <li><a class="navbar__item" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+
+
+    <!--AQUI ESTA EL CONTENIDO DE LA PAGINA WEB-->
+    <!--Mapa-->
+    <section class="presentacion presentacion-bgnd--index">
+        <div class="presentacion__content">
+            <h2 class="presentacion__content--h2">Diseño y Desarrollo FullStack Personalizado</h2>
+            <p class="presentacion__content--p">
+                <a href="https://goo.gl/maps/3PFzk2THVoXUDs788" target="_blank">
+                    <img class="presentacion__content--mpPointImg" src="resources/mapPoint.png" alt="">
+                </a>
+                Teziutlán, Puebla                
+            </p>
+            <div>
+                <a href="contacto.html" class="buttons">Contactar</a>
+            </div>
+                        
+        </div>
+    </section>
+
+    <!--Servicios-->
+    <main class="container sombra">
+        <h2>Mis Servicios</h2>
+        <div class="services">
+            <section class="services__service">
+                <h3 class="services__service--h3">Diseno Web</h3>
+                <img class="services__service--itemIcon" src="resources/webDevIcon.png" alt="">
+                <p class="services__service--p">
+                    Diseño de Páginas Web usando herramientas especializadas, con la finalidad de ofrecer las mejores
+                    soluciones
+                    y actualizar todo tipo de negocios que deseen abrirse al nuevo mercado del siglo 21
+                </p>
+            </section>
+            <section class="services__service">
+                <h3 class="services__service--h3">Aplicaciones Moviles</h3>
+                <img class="services__service--itemIcon" src="resources/MovilDevIcon.png" alt="">
+                <p class="services__service--p">
+                    Introducimos a nuestros clientes al mundo del internet haciendo crecer su empresa con aplicaciones
+                    móviles para dispositivos Android y IOS acorde a sus necesidades.
+                </p>
+            </section>
+            <section class="services__service">
+                <h3 class="services__service--h3">E-Commerce</h3>
+                <img class="services__service--itemIcon" src="resources/ECommerceIco.png" alt="">
+                <p class="services__service--p">
+                    Lleva el control de tu empresa aprovechando tus ventas online, con envíos a domicilio
+                    y pagos con tarjeta ofreciendo la mejor opción a tus clientes.
+                </p>
+            </section>
+        </div>
+        <!--Contacto-->
+        <!-- <section class="container contactSize">
+            <h2>Contacto</h2>
+            <form id="formulario" action="" class="form" method="">
+                <fieldset class="form__fieldset">
+                    <div>
+                        <legend class="form__legend">Contactanos llenando todos los campos</legend>
+                    </div>
+                    <div class="form__contCampos">
+                        <div class="form__campo">
+                            <label class="form__campo--label">Nombre</label>
+                            <input id="txtName" name="txtName" class="inputText" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="form__campo">
+                            <label class="form__campo--label">Telefono</label>
+                            <input id="txtPhone" name="txtPhone" class="inputText" type="tel" placeholder="Tu Telefono">
+                        </div>
+                        <div class="form__campo">
+                            <label class="form__campo--label">Correo Electronico</label>
+                            <input id="txtEmail" name="txtEmail" class="inputText" type="email" placeholder="ejemplo@gmail.com">
+                        </div>
+                        <div class="form__campo">
+                            <label class="form__campo--label">Mensaje</label>
+                            <textarea id="txtMessage" name="txtMessage" class="inputText" cols="30" rows="5"
+                                placeholder="Escribe aqui tu mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="alignRigth">
+                        <input class="buttons w-100" type="submit" name="Enviar" id="btnSend">
+                    </div>
+                </fieldset>
+            </form>
+        </section> -->
+
+        <!-- Redes sociales -->
+        <section class="container__b comprar">
+            <h2 class="comprar__titulo">Síguenos en nuestras redes sociales</h1>
+                <div class="bloques">
+                    <div class="bloque">
+                        <a href="https://www.facebook.com/ProverbiusSoftware" target="_blank">
+                            <img class="bloque__icono--b" src="resources/facebook black.png" alt="icono 1">
+                        </a>
+                        <h3 class="bloque__titulo">Facebook</h3>
+                    </div>
+                    <!--fin Bloque-->
+                    <div class="bloque">
+                        <a href="https://www.linkedin.com/in/osbaldo-toledo-ramos-06b249213/" target="_blank">
+                            <img class="bloque__icono--b" src="resources/linkedin black.png" alt="icono 2">
+                        </a>
+                        <h3 class="bloque__titulo">LinkedIn</h3>
+                    </div>
+                    <!--fin Bloque-->
+                    <div class="bloque">
+                        <a href="https://chat.whatsapp.com/G6MDE4LHIOj413q2AD4iUj" target="_blank">
+                            <img class="bloque__icono--b" src="resources/whatsap black.png" alt="icono 3">
+                        </a>
+                        <h3 class="bloque__titulo">WhatsApp</h3>
+                    </div>
+                    <!--fin Bloque-->
+                    <div class="bloque">
+                        <a href="https://t.me/joinchat/MPDEYAUpXTw3MDlh" target="_blank">
+                            <img class="bloque__icono--b" src="resources/telegram black.png" alt="icono 3">
+                        </a>
+                        <h3 class="bloque__titulo">Telegram</h3>
+                    </div>
+                    <!--fin Bloque-->
+
+                </div>
+                <!--fin Bloques-->
+        </section>
+        </section>        
+</body>
+
+<footer class="container footer">
+    <p>todos los derechos reservados.</p>
+</footer>
+
+</html>

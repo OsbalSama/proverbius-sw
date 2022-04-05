@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Estilos y preloads-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Proverbius Software</title>
+    <link rel="preload" type="text/css" href="css/normalize.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="resources/Proverbius-sw Logo HD.png" />
+
+    <link rel="preload" href="resources/nosotros2.png" as="image">
+
+    <link rel="preload" href="img/certificados/1.png" as="image">
+    <link rel="preload" href="img/certificados/2.png" as="image">
+    <link rel="preload" href="img/certificados/3.png" as="image">
+    <link rel="preload" href="img/certificados/4.png" as="image">
+
+    <link rel="preload" href="resources/icono_1.png" as="image">
+    <link rel="preload" href="resources/icono_2.png" as="image">
+    <link rel="preload" href="resources/icono_3.png" as="image">
+    <link rel="preload" href="resources/icono_4.png" as="image">
+
+
+</head>
+
+<body>
+    <!--Barra de Titulo-->
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <img class="header__mainlogo" src="resources/Proverbius-sw Logo HD.png" alt="main Logo">
+            </a>
+            <h1 class="header__maindev">
+                Proverbius Software
+            </h1>
+        </div>
+        <div class="menu">
+            <input type="checkbox" class="btnMenu" id="btnMenu">
+            <label for="btnMenu"><img class="navbar_icon" src="resources/menuIcon.png" alt="menu desplegable"></label>
+            <nav class="navMenu">
+                <ul>
+                    <li><a class="navbar__item" href="index.html">Inicio</a></li>
+                    <li><a class="navbar__item navbar__item--active" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="navbar__item" href="productos.html">Desarrollo</a></li>
+                    <li><a class="navbar__item" href="webservices.html">Apps Web</a></li>
+                    <li><a class="navbar__item" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--AQUI ESTA EL CONTENIDO DE LA PAGINA WEB
+    <main class="container">
+        <h1>¿Quiénes somos?</h1>
+        <div class="nosotros">
+            <div class="nosotros__content">                
+                <p>
+                    Somos un equipo de programadores que nos dedicamos a crear soluciones para clientes que deseen
+                    expandir sus horizontes, abriéndoles un nuevo mercado. Usando distintas herramientas tecnológicas
+                    como Software personalizado, hosting de Páginas Web, aplicaciones Móviles, entre muchas otras más.
+                </p>
+            </div>
+            <img class="nosotros__img" src="resources/nosotros.png" alt="imagen nosotros">
+        </div>
+    </main>-->
+
+    <main class="container">
+        <h1>Ejecutive / Creative</h1>
+        <div class="nosotros">
+            <div class="nosotros__content">
+                <h2>Osbaldo Toledo Ramos</h2><span>--FullStack Dev--</span>
+                <p>
+                    Desarrollador FullStack especializado en aplicaciones móviles usando plataformas como Xamarin forms
+                    y Flutter, diseño de Páginas Web con HTMS5, CSS y JavaScript, Manejo de Bases de Datos como SQL
+                    Server y MySQL, Desarrollo de Aplicaciones de Escritorio usando Netbeans con JDK 1.8.0 con, al igual
+                    que en C++ y C# con Visual Studio. Manejo avanzado de paquetería Office y dominio del inglés en
+                    nivel intermedio-avanzado.
+                </p>
+            </div>
+            <img class="nosotros__img--a" src="resources/nosotros2.png" alt="imagen nosotros">
+        </div>
+    </main>
+
+
+    <section class="Certificados container">
+        <h2>Cursos y Certificaciones</h1>
+            <div class="ListaCert">
+                <div class="Cert">
+                    <img id="udemy01" class="imageCert" src="img/certificados/1.png" alt="icono 1">
+                    <h3 class="titleCert">Aprende Xamarin Forms y desarrolla apps para Android y IOS</h3>
+                </div>
+                <!--fin Bloque-->
+                <div class="Cert">
+                    <img id="udemy02" class="imageCert" src="img/certificados/2.png" alt="icono 2">
+                    <h3 class="titleCert">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</h3>
+                </div>
+                <!--fin Bloque-->
+                <div class="Cert">
+                    <img id="udemy03" class="imageCert" src="img/certificados/3.png" alt="icono 3">
+                    <h3 class="titleCert">Domina Laravel y Crea Aplicaciones de Alto Nivel con Laravel </h3>
+                </div>
+                <!--fin Bloque-->
+                <div class="Cert">
+                    <img id="udemy04" class="imageCert" src="img/certificados/4.png" alt="icono 4">
+                    <h3 class="titleCert">GIT+GitHub: Todo un sistema de control de versiones de cero</h3>
+                </div>
+                <!--fin Bloque-->
+                <!-- <div class="Cert">
+                    <img class="imageCert" src="img/wip.png" alt="icono 2">
+                    <h3 class="titleCert">Node: De cero a experto ( Edición 2021 )</h3>
+                </div> -->
+                <!--fin Bloque-->
+                <!-- <div class="Cert">
+                    <img class="imageCert" src="img/wip.png" alt="icono 2">
+                    <h3 class="titleCert">Angular: De cero a experto ( Edición 2021 )</h3>
+                </div> -->
+                <!--fin Bloque-->
+
+            </div>
+            <!--fin Bloques-->
+    </section>
+
+
+    <section class="container comprar">
+        <h2 class="comprar__titulo">¿Por qué contar con nosotros?</h1>
+            <div class="bloques">
+                <div class="bloque">
+                    <img class="bloque__icono" src="resources/icono_1.png" alt="icono 1">
+                    <h3 class="bloque__titulo">La Mejor Inversion</h3>
+                    <p class="bloque__desc">
+                        Puedes contar con nuestros servicios, para mejorar tu desempeño laboral al mejor costo –
+                        beneficio que encontraras en el mercado.
+                    </p>
+                </div>
+                <!--fin Bloque-->
+                <div class="bloque">
+                    <img class="bloque__icono" src="resources/icono_2.png" alt="icono 2">
+                    <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                    <p class="bloque__desc">
+                        Estamos en constante mejora de nuestros servicios para ofrecer la mejor experiencia a
+                        nuestros clientes.
+                    </p>
+                </div>
+                <!--fin Bloque-->
+                <div class="bloque">
+                    <img class="bloque__icono" src="resources/icono_3.png" alt="icono 3">
+                    <h3 class="bloque__titulo">Soporte 24/7</h3>
+                    <p class="bloque__desc">
+                        Contamos con asistencia remota, capacitaciones en video, conferencias en vivo, recursos online y
+                        atención personalizada a completa disposicion del cliente.
+                    </p>
+                </div>
+                <!--fin Bloque-->
+                <div class="bloque">
+                    <img class="bloque__icono" src="resources/icono_4.png" alt="icono 4">
+                    <h3 class="bloque__titulo">Seguridad</h3>
+                    <p class="bloque__desc">
+                        Tu información está segura gracias a las últimas actualizaciones disponibles para la
+                        protección de tus datos personales y seguridad informática.
+                    </p>
+                </div>
+                <!--fin Bloque-->
+            </div>
+            <!--fin Bloques-->
+    </section>
+
+    <script src="scripts/gallery.js"></script>
+</body>
+<footer class="container footer">
+    <p>todos los derechos reservados.</p>
+</footer>
+
+</html>
