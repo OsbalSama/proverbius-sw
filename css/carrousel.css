@@ -1,0 +1,257 @@
+/* =========================================
+   CERTIFICACIONES
+   ========================================= */
+
+.Certificados {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Certificados > h2 {
+  margin-bottom: 3rem;
+}
+
+/* =========================================
+   CONTENEDOR DEL CARRUSEL
+   ========================================= */
+
+.cert-carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* =========================================
+   VIEWPORT
+   ========================================= */
+
+.cert-carousel__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* =========================================
+   TRACK
+   ========================================= */
+
+.cert-carousel__track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* =========================================
+   TARJETA
+   ========================================= */
+
+.cert-carousel .Cert {
+  flex: 0 0 33.333333%;
+  width: 33.333333%;
+  box-sizing: border-box;
+
+  margin: 0.5rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   IMAGEN
+   ========================================= */
+
+.cert-carousel .imageCert {
+  display: block;
+
+  width: 100%;
+  max-width: 24rem;
+
+  height: 16rem;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   TITULO
+   ========================================= */
+
+.cert-carousel .titleCert {
+  width: 100%;
+
+  min-height: 5rem;
+
+  margin: 1.5rem 0 0;
+  padding: 0;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.cert-carousel__btn {
+  flex: 0 0 auto;
+
+  width: 4.5rem;
+  height: 4.5rem;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: var(--secundario);
+  color: var(--blanco);
+
+  font-size: 2.5rem;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.cert-carousel__btn:hover {
+  transform: scale(1.08);
+  background-color: var(--primario);
+}
+
+.cert-carousel__btn:active {
+  transform: scale(0.95);
+}
+
+/* =========================================
+   PUNTOS
+   ========================================= */
+
+.cert-carousel__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-top: 2.5rem;
+}
+
+.cert-carousel__dot {
+  width: 1rem;
+  height: 1rem;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #bbb;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.cert-carousel__dot:hover {
+  transform: scale(1.2);
+}
+
+.cert-carousel__dot.active {
+  background-color: var(--secundario);
+  transform: scale(1.2);
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .cert-carousel .Cert {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .cert-carousel .imageCert {
+    height: 15rem;
+    max-width: 20rem;
+  }
+
+  .cert-carousel .titleCert {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================================
+   MÓVIL
+   ========================================= */
+
+@media (max-width: 600px) {
+  .Certificados {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  .cert-carousel {
+    gap: 0.5rem;
+  }
+
+  .cert-carousel .Cert {
+    flex: 0 0 100%;
+    width: 100%;
+
+    padding: 1.2rem;
+  }
+
+  .cert-carousel .imageCert {
+    width: 100%;
+    max-width: 18rem;
+    height: 16rem;
+  }
+
+  .cert-carousel .titleCert {
+    min-height: auto;
+
+    margin-top: 1.2rem;
+
+    font-size: 1.5rem;
+  }
+
+  .cert-carousel__btn {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    font-size: 2rem;
+  }
+}

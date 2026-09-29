@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preload" type="text/css" href="css/normalize.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">    
+    <link rel="preload" href="../css/carrousel-product.css" as="style">
+    <link rel="stylesheet" href="../css/carrousel-product.css">    
+    <link rel="shortcut icon" href="../resources/Proverbius-sw Logo HD.png" />
+
+    <title>RC Restaurant</title>
+</head>
+
+
+<body>
+    <!--Barra de Titulo-->
+    <header>        
+        <div class="header">
+            <a href="index.html">
+                <img class="header__mainlogo" src="../resources/Proverbius-sw Logo HD.png" alt="main Logo">
+            </a>
+            <h1 class="header__maindev">
+                Proverbius Software
+            </h1>
+        </div>
+        <div class="menu">
+            <input type="checkbox" class="btnMenu" id="btnMenu">
+            <label for="btnMenu"><img class="navbar_icon" src="resources/menuIcon.png" alt="menu desplegable"></label>
+            <nav class="navMenu">
+                <ul>
+                    <li><a class="navbar__item" href="../index.html">Inicio</a></li>
+                    <li><a class="navbar__item" href="../nosotros.html">Nosotros</a></li>
+                    <li><a class="navbar__item navbar__item--active" href="../productos.html">Desarrollo</a></li>
+                    <li><a class="navbar__item" href="../webservices.html">Apps Web</a></li>
+                    <li><a class="navbar__item" href="../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--AQUI ESTA EL CONTENIDO DE LA PAGINA WEB-->
+
+    <section class="presentacion presentacion-bgnd--rc-restaurant ">
+        <div class="presentacion__content ">
+            <h2 class="presentacion__content--h2">Retail Core Restaurant</h2>
+            <p class="presentacion__content--p">
+               <b>Retail Core Restaurant</b> es un sistema de Punto de Venta (PDV) diseñado para restaurantes, que permite gestionar pedidos, mesas, productos y operaciones de venta de forma rápida y sencilla.
+            </p>
+        </div>
+    </section>
+    <section class="galeria">
+        <h2>Galería</h2>
+
+        <div class="galeriaCarousel" id="galeriaRegisterCashFree">
+
+            <button
+                class="galeriaCarousel__btn galeriaCarousel__btn--prev"
+                type="button"
+                aria-label="Imagen anterior"
+            >
+                &#10094;
+            </button>
+
+            <div class="galeriaCarousel__viewport">
+                <div class="galeriaCarousel__track"></div>
+            </div>
+
+            <button
+                class="galeriaCarousel__btn galeriaCarousel__btn--next"
+                type="button"
+                aria-label="Siguiente imagen"
+            >
+                &#10095;
+            </button>
+
+        </div>
+
+        <div
+            class="galeriaCarousel__dots"
+            id="galeriaRegisterCashFreeDots"
+        ></div>
+    </section>
+
+    <!-- <section class="container__Videos">
+        <h2>Videos de Capacitación</h2>
+        <div class="videoGrid">            
+            <div class="BloqueVideo">
+                <iframe class="BloqueVideo__img" width="560" height="315"
+                    src="https://www.youtube.com/embed/1aQC6iTLBgw" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="BloqueVideo__content">
+                    <h3>1.- Instalación y Configuración </h3>
+                    <p>
+                        Aprende a instalar y configurar Register Cash Free en una maquina local para llevar tu negocio
+                        al siguiente nivel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    </div>
+</body>
+
+<footer class="container footer">
+    <p>todos los derechos reservados.</p>
+</footer>
+
+<script src="../scripts/carrousel-product.js"></script>
+<!-- 
+"resources/registerCashFree/01.png",
+"resources/registerCashFree/02.png",
+"resources/registerCashFree/03.png",
+"resources/registerCashFree/04.png",
+"resources/registerCashFree/05.png" 
+-->
+<!-- Imágenes del carrusel -->
+<script type="application/json" id="imagenesRegisterCashFree">
+[
+    "https://cdn.vectorstock.com/i/500p/43/90/abstract-circle-digital-cyber-security-vector-47284390.jpg",
+    "https://w0.peakpx.com/wallpaper/642/892/HD-wallpaper-security-concept-digital-art-creative-3d-lock-computer-security-scanning-security.jpg",
+    "https://w0.peakpx.com/wallpaper/686/39/HD-wallpaper-computer-security-cybersecurity-technology-background-with-lock-blue-neon-lock-digital-background.jpg",
+    "https://wallpaperaccess.com/full/1673318.jpg",
+    "https://cdn.wallpapersafari.com/96/47/yBZiDV.jpg"
+]
+</script>
+
+
+</html>

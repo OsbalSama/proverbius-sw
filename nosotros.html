@@ -1,207 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <!--Estilos y preloads-->
 
-<!--Estilos y preloads-->
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros | Proverbius Software</title>
-    <link rel="preload" type="text/css" href="css/normalize.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="preload"
+      type="text/css"
+      href="css/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="preload" href="css/nosotros.css" as="style" />
+    <link rel="preload" href="css/carrousel.css" as="style" />
+    <link rel="preload" href="css/gallery.css" as="style" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="css/carrousel.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link rel="shortcut icon" href="resources/Proverbius-sw Logo HD.png" />
 
-    <link rel="preload" href="resources/nosotros2.png" as="image">
+    <link rel="preload" href="resources/nosotros2.png" as="image" />
 
-    <link rel="preload" href="img/certificados/1.png" as="image">
-    <link rel="preload" href="img/certificados/2.png" as="image">
-    <link rel="preload" href="img/certificados/3.png" as="image">
-    <link rel="preload" href="img/certificados/4.png" as="image">
+    <link rel="preload" href="img/certificados/1.png" as="image" />
+    <link rel="preload" href="img/certificados/2.png" as="image" />
+    <link rel="preload" href="img/certificados/3.png" as="image" />
+    <link rel="preload" href="img/certificados/4.png" as="image" />
 
-    <link rel="preload" href="resources/icono_1.png" as="image">
-    <link rel="preload" href="resources/icono_2.png" as="image">
-    <link rel="preload" href="resources/icono_3.png" as="image">
-    <link rel="preload" href="resources/icono_4.png" as="image">
+    <link rel="preload" href="resources/icono_1.png" as="image" />
+    <link rel="preload" href="resources/icono_2.png" as="image" />
+    <link rel="preload" href="resources/icono_3.png" as="image" />
+    <link rel="preload" href="resources/icono_4.png" as="image" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!--Barra de Titulo-->
     <header>
-        <div class="header">
-            <a href="index.html">
-                <img class="header__mainlogo" src="resources/Proverbius-sw Logo HD.png" alt="main Logo">
-            </a>
-            <h1 class="header__maindev">
-                Proverbius Software
-            </h1>
-        </div>
-        <div class="menu">
-            <input type="checkbox" class="btnMenu" id="btnMenu">
-            <label for="btnMenu"><img class="navbar_icon" src="resources/menuIcon.png" alt="menu desplegable"></label>
-            <nav class="navMenu">
-                <ul>
-                    <li><a class="navbar__item" href="index.html">Inicio</a></li>
-                    <li><a class="navbar__item navbar__item--active" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="navbar__item" href="productos.html">Desarrollo</a></li>
-                    <li><a class="navbar__item" href="webservices.html">Apps Web</a></li>
-                    <li><a class="navbar__item" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header">
+        <a href="index.html">
+          <img
+            class="header__mainlogo"
+            src="resources/Proverbius-sw Logo HD.png"
+            alt="main Logo"
+          />
+        </a>
+        <h1 class="header__maindev">Proverbius Software</h1>
+      </div>
+      <div class="menu">
+        <input type="checkbox" class="btnMenu" id="btnMenu" />
+        <label for="btnMenu"
+          ><img
+            class="navbar_icon"
+            src="resources/menuIcon.png"
+            alt="menu desplegable"
+        /></label>
+        <nav class="navMenu">
+          <ul>
+            <li><a class="navbar__item" href="index.html">Inicio</a></li>
+            <li>
+              <a class="navbar__item navbar__item--active" href="nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a class="navbar__item" href="productos.html">Desarrollo</a>
+            </li>
+            <li>
+              <a class="navbar__item" href="webservices.html">Apps Web</a>
+            </li>
+            <li><a class="navbar__item" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <main class="container presentacion">
+      <div class="presentacion__encabezado">
+        <span class="presentacion__etiqueta">SOFTWARE DEVELOPER</span>
 
-    <!--AQUI ESTA EL CONTENIDO DE LA PAGINA WEB
-    <main class="container">
-        <h1>¿Quiénes somos?</h1>
-        <div class="nosotros">
-            <div class="nosotros__content">                
-                <p>
-                    Somos un equipo de programadores que nos dedicamos a crear soluciones para clientes que deseen
-                    expandir sus horizontes, abriéndoles un nuevo mercado. Usando distintas herramientas tecnológicas
-                    como Software personalizado, hosting de Páginas Web, aplicaciones Móviles, entre muchas otras más.
-                </p>
-            </div>
-            <img class="nosotros__img" src="resources/nosotros.png" alt="imagen nosotros">
-        </div>
-    </main>-->
+        <h1>Full Stack Developer</h1>
 
-    <main class="container">
-        <h1>Ejecutive / Creative</h1>
-        <div class="nosotros">
-            <div class="nosotros__content">
-                <h2>Osbaldo Toledo Ramos</h2><span>--FullStack Dev--</span>
-                <p>
-                    Desarrollador FullStack especializado en aplicaciones móviles usando plataformas como Xamarin forms
-                    y Flutter, diseño de Páginas Web con HTMS5, CSS y JavaScript, Manejo de Bases de Datos como SQL
-                    Server y MySQL, Desarrollo de Aplicaciones de Escritorio usando Netbeans con JDK 1.8.0 con, al igual
-                    que en C++ y C# con Visual Studio. Manejo avanzado de paquetería Office y dominio del inglés en
-                    nivel intermedio-avanzado.
-                </p>
-            </div>
-            <img class="nosotros__img--a" src="resources/nosotros2.png" alt="imagen nosotros">
+        <p class="presentacion__subtitulo">
+          Desarrollo de aplicaciones web y sistemas empresariales
+        </p>
+      </div>
+
+      <div class="nosotros">
+        <div class="nosotros__content">
+          <h2>Osbaldo Toledo Ramos</h2>
+
+          <span class="nosotros__rol">
+            Software Development · Web Applications · Business Systems
+          </span>
+
+          <p>
+            Full Stack Developer con experiencia en el desarrollo y
+            mantenimiento de <strong>aplicaciones web</strong> y
+            <strong>sistemas empresariales</strong>. Especializado en
+            <strong>Angular</strong>, <strong>Node.js / Express</strong>,
+            <strong>PHP</strong>, <strong>MySQL</strong> y
+            <strong>SQL Server</strong>.
+          </p>
+
+          <p>
+            Experiencia trabajando con <strong>APIs REST</strong>,
+            <strong>JWT / RBAC</strong>, <strong>Docker</strong> y
+            <strong>Git</strong>, además de integración de servicios con
+            <strong>SAP Business ByDesign</strong>.
+          </p>
+
+          <p>
+            Enfocado en desarrollar soluciones para
+            <strong>procesos empresariales</strong>, automatización, gestión de
+            usuarios y permisos, así como en la evolución y mantenimiento de
+            sistemas existentes.
+          </p>
+
+          <div class="nosotros__tecnologias">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>SQL Server</span>
+            <span>REST APIs</span>
+            <span>JWT / RBAC</span>
+            <span>Docker</span>
+            <span>Git</span>
+            <span>SAP Business ByDesign</span>
+            <span>Linux</span>
+          </div>
         </div>
+
+        <div class="nosotros__visual">
+          <img
+            class="nosotros__img--a"
+            src="resources/nosotros2.png"
+            alt="Osbaldo Toledo Ramos - Full Stack Developer"
+          />
+        </div>
+      </div>
     </main>
 
-
     <section class="Certificados container">
-        <h2>Cursos y Certificaciones</h1>
-        <div class="ListaCert">
+      <h2>Cursos y Certificaciones</h2>
+
+      <div class="cert-carousel">
+        <button
+          class="cert-carousel__btn cert-carousel__btn--prev"
+          type="button"
+          aria-label="Anterior"
+        >
+          &#10094;
+        </button>
+
+        <div class="cert-carousel__viewport">
+          <div class="cert-carousel__track">
             <div class="Cert">
-                <img id="udemy01" class="imageCert" src="img/certificados/1.png" alt="icono 1">
-                <h3 class="titleCert">Aprende Xamarin Forms y desarrolla apps para Android y IOS</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/1.png"
+                alt="Aprende Xamarin Forms"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                Aprende Xamarin Forms y desarrolla apps para Android y IOS
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy02" class="imageCert" src="img/certificados/2.png" alt="icono 2">
-                <h3 class="titleCert">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/2.png"
+                alt="Desarrollo Web"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy03" class="imageCert" src="img/certificados/3.png" alt="icono 3">
-                <h3 class="titleCert">Domina Laravel y Crea Aplicaciones de Alto Nivel con Laravel </h3>
+              <img
+                class="imageCert"
+                src="img/certificados/3.png"
+                alt="Laravel"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                Domina Laravel y Crea Aplicaciones de Alto Nivel con Laravel
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy04" class="imageCert" src="img/certificados/4.png" alt="icono 4">
-                <h3 class="titleCert">GIT+GitHub: Todo un sistema de control de versiones de cero</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/4.png"
+                alt="Git y GitHub"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                GIT + GitHub: Todo un sistema de control de versiones de cero
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy05" class="imageCert" src="img/certificados/5.jpg" alt="icono 5">
-                <h3 class="titleCert">Node: De cero a experto ( Edición 2021 )</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/5.jpg"
+                alt="Node.js"
+                loading="lazy"
+              />
+              <h3 class="titleCert">Node: De cero a experto (Edición 2021)</h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy06" class="imageCert" src="img/certificados/6.jpg" alt="icono 6">
-                <h3 class="titleCert">Angular: De cero a experto ( Edición 2021 )</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/6.jpg"
+                alt="Angular"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                Angular: De cero a experto (Edición 2021)
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy07" class="imageCert" src="img/certificados/7.jpg" alt="icono 7">
-                <h3 class="titleCert">SQL - Curso completo de Bases de Datos - de 0 a Avanzado</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/7.jpg"
+                alt="SQL"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                SQL - Curso completo de Bases de Datos - de 0 a Avanzado
+              </h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy08" class="imageCert" src="img/certificados/8.jpg" alt="icono 8">
-                <h3 class="titleCert">Principios SOLID y Clean Code</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/8.jpg"
+                alt="SOLID y Clean Code"
+                loading="lazy"
+              />
+              <h3 class="titleCert">Principios SOLID y Clean Code</h3>
             </div>
-            <!--fin Bloque-->
+
             <div class="Cert">
-                <img id="udemy09" class="imageCert" src="img/certificados/9.jpg" alt="icono 8">
-                <h3 class="titleCert">Docker - Guía práctica de uso para desarrolladores</h3>
+              <img
+                class="imageCert"
+                src="img/certificados/9.jpg"
+                alt="Docker"
+                loading="lazy"
+              />
+              <h3 class="titleCert">
+                Docker - Guía práctica de uso para desarrolladores
+              </h3>
             </div>
-            <!--fin Bloque-->
-            <!-- <div class="Cert">
-                <img class="imageCert" src="img/certificados/9.png" alt="icono 2">
-                <h3 class="titleCert">Docker - Guía práctica de uso para desarrolladores</h3>
-            </div> -->
-            <!--fin Bloque-->
-            <!-- <div class="Cert">
-                <img class="imageCert" src="img/certificados/10.png" alt="icono 2">
-                <h3 class="titleCert">
-                    React: De cero a experto ( Hooks y MERN )
-                    </h3>
-            </div> -->
-            <!--fin Bloque-->
+          </div>
         </div>
-            <!--fin Bloques-->
+
+        <button
+          class="cert-carousel__btn cert-carousel__btn--next"
+          type="button"
+          aria-label="Siguiente"
+        >
+          &#10095;
+        </button>
+      </div>
+
+      <div class="cert-carousel__dots"></div>
     </section>
 
-
     <section class="container comprar">
-        <h2 class="comprar__titulo">¿Por qué contar con nosotros?</h1>
-            <div class="bloques">
-                <div class="bloque">
-                    <img class="bloque__icono" src="resources/icono_1.png" alt="icono 1">
-                    <h3 class="bloque__titulo">La Mejor Inversion</h3>
-                    <p class="bloque__desc">
-                        Puedes contar con nuestros servicios, para mejorar tu desempeño laboral al mejor costo –
-                        beneficio que encontraras en el mercado.
-                    </p>
-                </div>
-                <!--fin Bloque-->
-                <div class="bloque">
-                    <img class="bloque__icono" src="resources/icono_2.png" alt="icono 2">
-                    <h3 class="bloque__titulo">La Mejor Calidad</h3>
-                    <p class="bloque__desc">
-                        Estamos en constante mejora de nuestros servicios para ofrecer la mejor experiencia a
-                        nuestros clientes.
-                    </p>
-                </div>
-                <!--fin Bloque-->
-                <div class="bloque">
-                    <img class="bloque__icono" src="resources/icono_3.png" alt="icono 3">
-                    <h3 class="bloque__titulo">Soporte 24/7</h3>
-                    <p class="bloque__desc">
-                        Contamos con asistencia remota, capacitaciones en video, conferencias en vivo, recursos online y
-                        atención personalizada a completa disposicion del cliente.
-                    </p>
-                </div>
-                <!--fin Bloque-->
-                <div class="bloque">
-                    <img class="bloque__icono" src="resources/icono_4.png" alt="icono 4">
-                    <h3 class="bloque__titulo">Seguridad</h3>
-                    <p class="bloque__desc">
-                        Tu información está segura gracias a las últimas actualizaciones disponibles para la
-                        protección de tus datos personales y seguridad informática.
-                    </p>
-                </div>
-                <!--fin Bloque-->
-            </div>
-            <!--fin Bloques-->
+      <h2 class="comprar__titulo">¿Por qué trabajar conmigo?</h2>
+
+      <div class="bloques">
+        <div class="bloque">
+          <img
+            class="bloque__icono"
+            src="resources/icono_1.png"
+            alt="icono de desarrollo de software"
+          />
+
+          <h3 class="bloque__titulo">Experiencia Real</h3>
+
+          <p class="bloque__desc">
+            Cuento con experiencia desarrollando y dando mantenimiento a
+            sistemas utilizados en entornos empresariales, trabajando con
+            aplicaciones web, bases de datos, APIs e integración de servicios.
+          </p>
+        </div>
+        <!-- fin Bloque -->
+
+        <div class="bloque">
+          <img
+            class="bloque__icono"
+            src="resources/icono_2.png"
+            alt="icono de desarrollo full stack"
+          />
+
+          <h3 class="bloque__titulo">Desarrollo Full Stack</h3>
+
+          <p class="bloque__desc">
+            Desarrollo soluciones tanto en frontend como en backend utilizando
+            tecnologías como Angular, Node.js, Express, PHP, MySQL y SQL Server,
+            buscando siempre soluciones prácticas, mantenibles y escalables.
+          </p>
+        </div>
+        <!-- fin Bloque -->
+
+        <div class="bloque">
+          <img
+            class="bloque__icono"
+            src="resources/icono_3.png"
+            alt="icono de soporte y mantenimiento"
+          />
+
+          <h3 class="bloque__titulo">Soporte y Mantenimiento</h3>
+
+          <p class="bloque__desc">
+            No solo desarrollo nuevas funcionalidades. También analizo
+            problemas, corrijo errores, mantengo aplicaciones existentes y apoyo
+            en la evolución de sistemas de acuerdo con las necesidades del
+            proyecto.
+          </p>
+        </div>
+        <!-- fin Bloque -->
+
+        <div class="bloque">
+          <img
+            class="bloque__icono"
+            src="resources/icono_4.png"
+            alt="icono de seguridad"
+          />
+
+          <h3 class="bloque__titulo">Seguridad y Buenas Prácticas</h3>
+
+          <p class="bloque__desc">
+            Implemento soluciones orientadas a la seguridad mediante
+            autenticación, autorización por roles y permisos, JWT, control de
+            acceso y protección de servicios y datos.
+          </p>
+        </div>
+        <!-- fin Bloque -->
+      </div>
+      <!-- fin Bloques -->
     </section>
 
     <script src="scripts/gallery.js"></script>
-</body>
-<footer class="container footer">
+    <script src="scripts/carrousel.js"></script>
+  </body>
+  <footer class="container footer">
     <p>todos los derechos reservados.</p>
-</footer>
-
+  </footer>
 </html>

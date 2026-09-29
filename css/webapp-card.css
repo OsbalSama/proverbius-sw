@@ -1,0 +1,284 @@
+/* =========================
+   TARJETAS DE SERVICIOS
+========================= */
+
+.plantilla,
+.plantilla2 {
+  background-color: var(--clearGray);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 3rem 0;
+
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.18);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.plantilla:hover,
+.plantilla2:hover {
+  transform: translateY(-0.4rem);
+
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   IMAGEN / PRESENTACIÓN
+========================= */
+
+.plantilla_image {
+  display: flex;
+  flex-direction: column;
+}
+
+.plantilla_image-header {
+  margin-bottom: 1.5rem;
+}
+
+.plantilla_image-header h2 {
+  margin: 0.8rem 0 0;
+  color: var(--oscuro);
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+
+/* Etiqueta */
+
+.plantilla_badge {
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--primarioOscuro);
+  color: white;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+
+/* Imagen */
+
+.plantilla_image img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  border-radius: 1rem;
+
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* Descripción */
+
+.plantilla_image p {
+  color: #333;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  margin: 1.5rem 0 0;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.plantilla_content {
+  color: black;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.plantilla_content h2 {
+  margin: 0 0 1.5rem;
+
+  color: var(--oscuro);
+
+  font-size: 2.4rem;
+
+  line-height: 1.2;
+}
+
+
+/* =========================
+   LISTA DE SERVICIOS
+========================= */
+
+.listaServicios {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.listaServicios li {
+  position: relative;
+
+  text-align: start;
+
+  padding: 1rem 0 1rem 2.8rem;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+  color: #333;
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.listaServicios li:last-child {
+  border-bottom: none;
+}
+
+
+/* Check */
+
+.listaServicios li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+  top: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: var(--secundario);
+  color: white;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.plantilla_action {
+  margin-top: 2.5rem;
+}
+
+.plantilla_action .buttons {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 1.2rem 2rem;
+
+  border-radius: 0.8rem;
+
+  text-decoration: none;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.plantilla_action .buttons span {
+  font-size: 2rem;
+
+  transition: transform 0.2s ease;
+}
+
+.plantilla_action .buttons:hover {
+  transform: translateY(-0.2rem);
+
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.plantilla_action .buttons:hover span {
+  transform: translateX(0.4rem);
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+  .tablaPaginasWeb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .plantilla {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+
+    padding: 2.5rem;
+  }
+
+  .plantilla2 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+
+    padding: 2.5rem;
+  }
+
+}
+
+
+/* =========================
+   TABLET / MÓVIL
+========================= */
+
+@media (max-width: 767px) {
+
+  .plantilla,
+  .plantilla2 {
+    padding: 1.5rem;
+  }
+
+  .plantilla_image-header h2 {
+    font-size: 2.3rem;
+  }
+
+  .plantilla_content h2 {
+    margin-top: 2rem;
+  }
+
+  .plantilla_image p {
+    font-size: 1.5rem;
+  }
+
+}

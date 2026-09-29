@@ -1,0 +1,465 @@
+/* =========================================
+   GALERÍA DE CERTIFICACIONES
+========================================= */
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.Certificados {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Certificados > h2 {
+    margin-bottom: 3rem;
+}
+
+
+/* =========================================
+   CARRUSEL
+========================================= */
+
+.cert-carousel {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+.cert-carousel__viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cert-carousel__track {
+    display: flex;
+    width: 100%;
+
+    transition: transform 0.5s ease-in-out;
+
+    will-change: transform;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.cert-carousel .Cert {
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--blanco);
+
+    border: 1px solid #e5e5e5;
+    border-radius: 0.8rem;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cert-carousel .Cert:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================
+   IMÁGENES
+========================================= */
+
+.cert-carousel .imageCert {
+    display: block;
+
+    width: 100%;
+    max-width: 24rem;
+    height: 16rem;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.cert-carousel .imageCert:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   TÍTULO DEL CERTIFICADO
+========================================= */
+
+.cert-carousel .titleCert {
+    width: 100%;
+    min-height: 5rem;
+
+    margin: 1.5rem 0 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   BOTONES DEL CARRUSEL
+========================================= */
+
+.cert-carousel__btn {
+    flex: 0 0 auto;
+
+    width: 4.5rem;
+    height: 4.5rem;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--secundario);
+    color: var(--blanco);
+
+    font-size: 2.5rem;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.cert-carousel__btn:hover {
+    transform: scale(1.08);
+
+    background-color: var(--primario);
+}
+
+.cert-carousel__btn:active {
+    transform: scale(0.95);
+}
+
+.cert-carousel__btn:focus-visible {
+    outline: 3px solid var(--secundario);
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   INDICADORES
+========================================= */
+
+.cert-carousel__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    margin-top: 2.5rem;
+}
+
+.cert-carousel__dot {
+    width: 1rem;
+    height: 1rem;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #bbb;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.cert-carousel__dot:hover {
+    transform: scale(1.2);
+}
+
+.cert-carousel__dot.active {
+    background-color: var(--secundario);
+
+    transform: scale(1.2);
+}
+
+.cert-carousel__dot:focus-visible {
+    outline: 2px solid var(--secundario);
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   LIGHTBOX / IMAGEN AMPLIADA
+========================================= */
+
+.cert-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.80);
+
+    animation: certLightboxFadeIn 0.2s ease;
+}
+
+
+/* =========================================
+   IMAGEN DEL LIGHTBOX
+========================================= */
+
+.cert-lightbox__image {
+    display: block;
+
+    max-width: 90%;
+    max-height: 85vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 0.4rem;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.45);
+
+    animation: certLightboxImageIn 0.2s ease;
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+========================================= */
+
+.cert-lightbox__close {
+    position: absolute;
+
+    top: 2rem;
+    right: 2rem;
+
+    width: 4.5rem;
+    height: 4.5rem;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--blanco);
+    color: var(--oscuro);
+
+    font-size: 3rem;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.cert-lightbox__close:hover {
+    transform: scale(1.1);
+
+    background-color: #f1f1f1;
+}
+
+.cert-lightbox__close:active {
+    transform: scale(0.95);
+}
+
+.cert-lightbox__close:focus-visible {
+    outline: 3px solid var(--secundario);
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   BLOQUEAR SCROLL
+========================================= */
+
+body.fijarBody {
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes certLightboxFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes certLightboxImageIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .cert-carousel .Cert {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .cert-carousel .imageCert {
+        height: 15rem;
+        max-width: 20rem;
+    }
+
+    .cert-carousel .titleCert {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .Certificados {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cert-carousel {
+        gap: 0.5rem;
+    }
+
+    .cert-carousel .Cert {
+        flex: 0 0 100%;
+        width: 100%;
+
+        padding: 1.2rem;
+    }
+
+    .cert-carousel .imageCert {
+        width: 100%;
+        max-width: 18rem;
+        height: 16rem;
+    }
+
+    .cert-carousel .titleCert {
+        min-height: auto;
+
+        margin-top: 1.2rem;
+
+        font-size: 1.5rem;
+    }
+
+    .cert-carousel__btn {
+        width: 3.5rem;
+        height: 3.5rem;
+
+        font-size: 2rem;
+    }
+
+    .cert-lightbox {
+        padding: 1rem;
+    }
+
+    .cert-lightbox__image {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+
+    .cert-lightbox__close {
+        top: 1rem;
+        right: 1rem;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        font-size: 2.3rem;
+    }
+
+}
