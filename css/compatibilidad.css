@@ -1,0 +1,152 @@
+/* ========================================
+   COMPATIBILIDAD
+======================================== */
+
+.compatibilidad {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.compatibilidad__header {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.compatibilidad__header h2 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+}
+
+.compatibilidad__header p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.compatibilidad__grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ========================================
+   ITEM
+======================================== */
+
+.compatibilidad__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+
+    background-color: white;
+
+    /* background: rgba(128, 128, 128, 0.05); */
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.compatibilidad__item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border-color:
+        rgba(128, 128, 128, 0.5);
+}
+
+
+/* ========================================
+   ICONO
+======================================== */
+
+.compatibilidad__icono {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 1.4rem;
+
+    background: rgba(128, 128, 128, 0.12);
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.compatibilidad__contenido {
+    flex: 1;
+}
+
+.compatibilidad__contenido h3 {
+    margin: 0 0 8px;
+
+    font-size: 1.1rem;
+}
+
+.compatibilidad__contenido p {
+    margin: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.55;
+
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .compatibilidad__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .compatibilidad {
+        padding: 45px 15px;
+    }
+
+    .compatibilidad__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .compatibilidad__item {
+        padding: 20px;
+    }
+
+}

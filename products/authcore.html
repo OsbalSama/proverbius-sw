@@ -1,135 +1,423 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="preload" type="text/css" href="css/normalize.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="../css/styles.css" as="style">
-    <link rel="stylesheet" href="../css/styles.css">    
-    <link rel="preload" href="../css/carrousel-product.css" as="style">
-    <link rel="stylesheet" href="../css/carrousel-product.css">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      type="text/css"
+      href="css/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="../css/styles.css" as="style" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="preload" href="../css/carrousel-product.css" as="style" />
+    <link rel="stylesheet" href="../css/carrousel-product.css" />
+
+    <link rel="preload" href="../css/caracteristicas.css" as="style" />
+    <link rel="stylesheet" href="../css/caracteristicas.css" />
+
+    <link rel="preload" href="../css/compatibilidad.css" as="style" />
+    <link rel="stylesheet" href="../css/compatibilidad.css" />
+
+    <link rel="preload" href="../css/servicios.css" as="style" />
+    <link rel="stylesheet" href="../css/servicios.css" />
+
     <link rel="shortcut icon" href="../resources/Proverbius-sw Logo HD.png" />
 
     <title>AuthCore Service</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <!--Barra de Titulo-->
-    <header>        
-        <div class="header">
-            <a href="index.html">
-                <img class="header__mainlogo" src="../resources/Proverbius-sw Logo HD.png" alt="main Logo">
-            </a>
-            <h1 class="header__maindev">
-                Proverbius Software
-            </h1>
-        </div>
-        <div class="menu">
-            <input type="checkbox" class="btnMenu" id="btnMenu">
-            <label for="btnMenu"><img class="navbar_icon" src="resources/menuIcon.png" alt="menu desplegable"></label>
-            <nav class="navMenu">
-                <ul>
-                    <li><a class="navbar__item" href="../index.html">Inicio</a></li>
-                    <li><a class="navbar__item" href="../nosotros.html">Nosotros</a></li>
-                    <li><a class="navbar__item navbar__item--active" href="../productos.html">Desarrollo</a></li>
-                    <li><a class="navbar__item" href="../webservices.html">Apps Web</a></li>
-                    <li><a class="navbar__item" href="../contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <img
+            class="header__mainlogo"
+            src="../resources/Proverbius-sw Logo HD.png"
+            alt="main Logo"
+          />
+        </a>
+        <h1 class="header__maindev">Proverbius Software</h1>
+      </div>
+      <div class="menu">
+        <input type="checkbox" class="btnMenu" id="btnMenu" />
+        <label for="btnMenu"
+          ><img
+            class="navbar_icon"
+            src="resources/menuIcon.png"
+            alt="menu desplegable"
+        /></label>
+        <nav class="navMenu">
+          <ul>
+            <li><a class="navbar__item" href="../index.html">Inicio</a></li>
+            <li>
+              <a class="navbar__item" href="../nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a
+                class="navbar__item navbar__item--active"
+                href="../productos.html"
+                >Desarrollo</a
+              >
+            </li>
+            <li>
+              <a class="navbar__item" href="../webservices.html">Apps Web</a>
+            </li>
+            <li>
+              <a class="navbar__item" href="../contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!--AQUI ESTA EL CONTENIDO DE LA PAGINA WEB-->
 
-    <section class="presentacion presentacion-bgnd--authcore ">
-        <div class="presentacion__content ">
-            <h2 class="presentacion__content--h2">AuthCore Service</h2>
-            <p class="presentacion__content--p">
-               <b>AuthCore</b> es una plataforma de gestión de identidad y accesos que centraliza usuarios, roles y permisos, proporcionando autenticación segura y control de acceso para aplicaciones empresariales.                
+    <section class="presentacion presentacion-bgnd--authcore">
+      <div class="presentacion__content">
+        <h2 class="presentacion__content--h2">AuthCore Service</h2>
+        <p class="presentacion__content--p">
+          <b>AuthCore</b> es una plataforma de gestión de identidad y accesos
+          que centraliza usuarios, roles y permisos, proporcionando
+          autenticación segura y control de acceso para aplicaciones
+          empresariales.
+        </p>
+      </div>
+    </section>
+
+    <section class="caracteristicas">
+      <div class="caracteristicas__header">
+        <h2>Características</h2>
+
+        <p>
+          Conoce las principales funcionalidades y capacidades que ofrece esta
+          aplicación.
+        </p>
+      </div>
+
+      <div class="caracteristicas__grid">
+        <article class="caracteristica">
+          <div class="caracteristica__icono">🔐</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Autenticación</h3>
+
+            <p>
+              Gestiona el acceso de los usuarios mediante mecanismos de
+              autenticación seguros.
             </p>
-        </div>
+          </div>
+        </article>
+
+        <article class="caracteristica">
+          <div class="caracteristica__icono">👥</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Gestión de usuarios</h3>
+
+            <p>
+              Administra usuarios y su información de acceso desde un sistema
+              centralizado.
+            </p>
+          </div>
+        </article>
+
+        <article class="caracteristica">
+          <div class="caracteristica__icono">🛡️</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Roles y permisos</h3>
+
+            <p>
+              Controla el acceso a las funcionalidades mediante roles y permisos
+              configurables.
+            </p>
+          </div>
+        </article>
+
+        <article class="caracteristica">
+          <div class="caracteristica__icono">🔑</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Control de sesiones</h3>
+
+            <p>
+              Administra sesiones y tokens de acceso para mantener un control
+              seguro de los usuarios.
+            </p>
+          </div>
+        </article>
+
+        <article class="caracteristica">
+          <div class="caracteristica__icono">🔗</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Integración</h3>
+
+            <p>
+              Permite centralizar la identidad y autorización de diferentes
+              aplicaciones.
+            </p>
+          </div>
+        </article>
+
+        <article class="caracteristica">
+          <div class="caracteristica__icono">🎫</div>
+
+          <div class="caracteristica__contenido">
+            <h3>Mesa de servicios</h3>
+
+            <p>
+              Gestiona solicitudes, incidencias y requerimientos mediante un
+              sistema de tickets.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
+
+    <section class="servicio">
+      <div class="servicio__header">
+        <h2>Servicio y adquisición</h2>
+
+        <p>
+          Conoce el proceso para solicitar una demostración, adquirir la
+          solución y comenzar su implementación.
+        </p>
+      </div>
+
+      <div class="servicio__grid">
+        <article class="servicio__item">
+          <div class="servicio__numero">01</div>
+
+          <div class="servicio__contenido">
+            <h3>Solicita una demo</h3>
+
+            <p>
+              Conoce el funcionamiento de la aplicación mediante una
+              demostración guiada y resuelve tus dudas antes de adquirir la
+              solución.
+            </p>
+
+            <!-- <a href="#contacto" class="servicio__btn">
+                        Solicitar demo
+                    </a> -->
+          </div>
+        </article>
+
+        <article class="servicio__item">
+          <div class="servicio__numero">02</div>
+
+          <div class="servicio__contenido">
+            <h3>Solicita una cotización</h3>
+
+            <p>
+              Indica las necesidades de tu negocio para determinar la
+              configuración, servicios y condiciones aplicables a tu
+              implementación.
+            </p>
+
+            <!-- <a href="#contacto" class="servicio__btn">
+                        Solicitar cotización
+                    </a> -->
+          </div>
+        </article>
+
+        <article class="servicio__item">
+          <div class="servicio__numero">03</div>
+
+          <div class="servicio__contenido">
+            <h3>Implementación</h3>
+
+            <p>
+              Una vez aprobada la propuesta, se realiza la configuración e
+              implementación de la solución de acuerdo con las condiciones
+              acordadas.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="servicio__condiciones">
+        <h3>Condiciones del servicio</h3>
+
+        <ul>
+          <li>La demostración puede realizarse de forma remota.</li>
+
+          <li>
+            La disponibilidad de una demo puede variar según la aplicación y su
+            estado de desarrollo.
+          </li>
+
+          <li>
+            El precio final se determina de acuerdo con las características y
+            necesidades de cada implementación.
+          </li>
+
+          <li>
+            La instalación, configuración, capacitación y soporte pueden
+            contratarse de acuerdo con la propuesta comercial.
+          </li>
+
+          <li>
+            Los servicios adicionales o modificaciones específicas pueden
+            generar costos adicionales.
+          </li>
+
+          <li>
+            Las condiciones comerciales se establecen previamente con el cliente
+            antes de iniciar la implementación.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="compatibilidad">
+      <div class="compatibilidad__header">
+        <h2>Compatibilidad</h2>
+
+        <p>
+          AuthCore puede integrarse con diferentes entornos, aplicaciones y
+          plataformas mediante su arquitectura basada en API.
+        </p>
+      </div>
+
+      <div class="compatibilidad__grid">
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">🌐</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>Aplicaciones web</h3>
+
+            <p>
+              Compatible con aplicaciones web capaces de consumir servicios
+              mediante APIs REST.
+            </p>
+          </div>
+        </article>
+
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">🖥️</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>Aplicaciones empresariales</h3>
+
+            <p>
+              Puede funcionar como servicio central de autenticación para
+              diferentes sistemas empresariales.
+            </p>
+          </div>
+        </article>
+
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">🔗</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>APIs REST</h3>
+
+            <p>
+              Permite la comunicación entre aplicaciones mediante servicios web
+              y respuestas en formato JSON.
+            </p>
+          </div>
+        </article>
+
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">🐳</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>Docker</h3>
+
+            <p>
+              Puede ejecutarse mediante contenedores Docker para facilitar su
+              despliegue y administración.
+            </p>
+          </div>
+        </article>
+
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">💻</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>Entornos locales</h3>
+
+            <p>
+              Puede implementarse dentro de redes locales para escenarios donde
+              se requiere infraestructura propia.
+            </p>
+          </div>
+        </article>
+
+        <article class="compatibilidad__item">
+          <div class="compatibilidad__icono">☁️</div>
+
+          <div class="compatibilidad__contenido">
+            <h3>Infraestructura en la nube</h3>
+
+            <p>
+              Su arquitectura basada en servicios permite adaptarlo a diferentes
+              infraestructuras de servidor.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="galeria">
-        <h2>Galería</h2>
+      <h2>Galería</h2>
 
-        <div class="galeriaCarousel" id="galeriaRegisterCashFree">
+      <div class="galeriaCarousel" id="galeriaRegisterCashFree">
+        <button
+          class="galeriaCarousel__btn galeriaCarousel__btn--prev"
+          type="button"
+          aria-label="Imagen anterior"
+        >
+          &#10094;
+        </button>
 
-            <button
-                class="galeriaCarousel__btn galeriaCarousel__btn--prev"
-                type="button"
-                aria-label="Imagen anterior"
-            >
-                &#10094;
-            </button>
-
-            <div class="galeriaCarousel__viewport">
-                <div class="galeriaCarousel__track"></div>
-            </div>
-
-            <button
-                class="galeriaCarousel__btn galeriaCarousel__btn--next"
-                type="button"
-                aria-label="Siguiente imagen"
-            >
-                &#10095;
-            </button>
-
+        <div class="galeriaCarousel__viewport">
+          <div class="galeriaCarousel__track"></div>
         </div>
 
-        <div
-            class="galeriaCarousel__dots"
-            id="galeriaRegisterCashFreeDots"
-        ></div>
+        <button
+          class="galeriaCarousel__btn galeriaCarousel__btn--next"
+          type="button"
+          aria-label="Siguiente imagen"
+        >
+          &#10095;
+        </button>
+      </div>
+
+      <div class="galeriaCarousel__dots" id="galeriaRegisterCashFreeDots"></div>
     </section>
+  </body>
 
-    <!-- <section class="container__Videos">
-        <h2>Videos de Capacitación</h2>
-        <div class="videoGrid">            
-            <div class="BloqueVideo">
-                <iframe class="BloqueVideo__img" width="560" height="315"
-                    src="https://www.youtube.com/embed/1aQC6iTLBgw" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="BloqueVideo__content">
-                    <h3>1.- Instalación y Configuración </h3>
-                    <p>
-                        Aprende a instalar y configurar Register Cash Free en una maquina local para llevar tu negocio
-                        al siguiente nivel.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    </div>
-</body>
-
-<footer class="container footer">
+  <footer class="container footer">
     <p>todos los derechos reservados.</p>
-</footer>
+  </footer>
 
-<script src="../scripts/carrousel-product.js"></script>
-<!-- 
-"resources/registerCashFree/01.png",
-"resources/registerCashFree/02.png",
-"resources/registerCashFree/03.png",
-"resources/registerCashFree/04.png",
-"resources/registerCashFree/05.png" 
--->
-<!-- Imágenes del carrusel -->
-<script type="application/json" id="imagenesRegisterCashFree">
-[
-    "https://cdn.vectorstock.com/i/500p/43/90/abstract-circle-digital-cyber-security-vector-47284390.jpg",
-    "https://w0.peakpx.com/wallpaper/642/892/HD-wallpaper-security-concept-digital-art-creative-3d-lock-computer-security-scanning-security.jpg",
-    "https://w0.peakpx.com/wallpaper/686/39/HD-wallpaper-computer-security-cybersecurity-technology-background-with-lock-blue-neon-lock-digital-background.jpg",
-    "https://wallpaperaccess.com/full/1673318.jpg",
-    "https://cdn.wallpapersafari.com/96/47/yBZiDV.jpg"
-]
-</script>
+  <script src="../scripts/carrousel-product.js"></script>
 
-
+  <script type="application/json" id="imagenesRegisterCashFree">
+    [
+      "../resources/AuthCore/001.png",
+      "../resources/AuthCore/002.png",
+      "../resources/AuthCore/003.png",
+      "../resources/AuthCore/004.png",
+      "../resources/AuthCore/005.png",
+      "../resources/AuthCore/006.png",
+      "../resources/AuthCore/007.png"
+    ]
+  </script>
 </html>

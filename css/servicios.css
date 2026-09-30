@@ -1,0 +1,437 @@
+/* ========================================
+   SERVICIO
+======================================== */
+
+.servicio {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.servicio__header {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.servicio__header h2 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+}
+
+.servicio__header p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.servicio__grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   ITEM
+======================================== */
+
+.servicio__item {
+    padding: 28px;
+
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+    background-color: white;
+
+    /* background: rgba(128, 128, 128, 0.05); */
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.servicio__item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border-color:
+        rgba(128, 128, 128, 0.5);
+}
+
+
+/* ========================================
+   NUMERO
+======================================== */
+
+.servicio__numero {
+    margin-bottom: 20px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    opacity: 0.45;
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.servicio__contenido h3 {
+    margin: 0 0 10px;
+
+    font-size: 1.8rem;
+}
+
+.servicio__contenido p {
+    margin: 0 0 20px;
+
+    font-size: 1.3rem;
+    line-height: 1.6;
+
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   BOTON
+======================================== */
+
+.servicio__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 16px;
+
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    background: rgba(128, 128, 128, 0.08);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.servicio__btn:hover {
+    border-color: rgba(128, 128, 128, 0.6);
+
+    background: rgba(128, 128, 128, 0.15);
+}
+
+
+/* ========================================
+   CONDICIONES
+======================================== */
+
+.servicio__condiciones {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+
+    background: rgba(128, 128, 128, 0.03);
+}
+
+.servicio__condiciones h3 {
+    margin: 0 0 20px;
+
+    font-size: 1.2rem;
+}
+
+.servicio__condiciones ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.servicio__condiciones li {
+    margin-bottom: 10px;
+
+    font-size: 0.95rem;
+    line-height: 1.55;
+
+    opacity: 0.8;
+}
+
+.servicio__condiciones li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .servicio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicio__item:last-child {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .servicio {
+        padding: 45px 15px;
+    }
+
+    .servicio__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio__item:last-child {
+        grid-column: auto;
+    }
+
+    .servicio__item {
+        padding: 22px;
+    }
+
+    .servicio__condiciones {
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   CONDICIONES DEL SERVICIO
+   ========================================================= */
+
+.servicio__condiciones {
+    width: min(1000px, 92%);
+    margin: 80px auto;
+
+    padding: 55px 60px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8ecf3;
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 60px rgba(30, 50, 90, 0.08);
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.servicio__condiciones h3 {
+    margin: 0 0 35px;
+
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    font-weight: 800;
+
+    color: #172033;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Línea decorativa debajo del título */
+
+.servicio__condiciones h3::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin-top: 14px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #2878ff,
+        #7157ff
+    );
+}
+
+
+/* =========================================================
+   LISTA
+   ========================================================= */
+
+.servicio__condiciones ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   ELEMENTOS
+   ========================================================= */
+
+.servicio__condiciones li {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 23px 5px;
+
+    font-size: 1.5rem;
+    line-height: 1.7;
+
+    color: #5f6b7a;
+
+    border-bottom: 1px solid #edf0f5;
+
+    transition:
+        background-color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+
+/* El último no necesita línea */
+
+.servicio__condiciones li:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   ICONO / NÚMERO
+   ========================================================= */
+
+.servicio__condiciones li::before {
+    content: "✓";
+
+    flex: 0 0 34px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2px;
+
+    border-radius: 50%;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+
+    color: #286cff;
+
+    background: #eef4ff;
+
+    box-shadow:
+        inset 0 0 0 1px #dce8ff;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.servicio__condiciones li:hover {
+    padding-left: 10px;
+
+    color: #3f4a5a;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .servicio__condiciones {
+        width: 90%;
+
+        padding: 38px 30px;
+
+        border-radius: 22px;
+    }
+
+    .servicio__condiciones h3 {
+        margin-bottom: 25px;
+    }
+
+    .servicio__condiciones li {
+        gap: 15px;
+
+        padding: 20px 0;
+
+        font-size: 0.95rem;
+    }
+
+    .servicio__condiciones li::before {
+        flex: 0 0 30px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .servicio__condiciones {
+        padding: 30px 22px;
+    }
+
+    .servicio__condiciones h3 {
+        font-size: 1.5rem;
+    }
+
+    .servicio__condiciones li {
+        align-items: flex-start;
+
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+}

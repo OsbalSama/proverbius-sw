@@ -1,0 +1,317 @@
+/* =========================================================
+   CARACTERÍSTICAS
+   ========================================================= */
+
+.caracteristicas {
+    width: min(1200px, 92%);
+    margin: 100px auto;
+    position: relative;
+}
+
+.caracteristicas__header {
+    max-width: 700px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.caracteristicas__header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #172033;
+}
+
+.caracteristicas__header p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #697386;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.caracteristicas__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.caracteristica {
+    width: 68%;
+    /* min-height: 210px; */
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    padding: 38px 42px;
+
+    background: #ffffff;
+    border: 1px solid #e9edf5;
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(30, 50, 90, 0.07);
+
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Tarjetas impares a la izquierda */
+
+.caracteristica:nth-child(odd) {
+    align-self: flex-start;
+}
+
+
+/* Tarjetas pares a la derecha */
+
+.caracteristica:nth-child(even) {
+    align-self: flex-end;
+}
+
+
+/* Efecto hover */
+
+.caracteristica:hover {
+    transform: translateY(-8px);
+    border-color: #dce3f1;
+
+    box-shadow:
+        0 25px 55px rgba(30, 50, 90, 0.12);
+}
+
+
+/* =========================================================
+   ICONO
+   ========================================================= */
+
+.caracteristica__icono {
+    flex: 0 0 90px;
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    font-size: 2.4rem;
+
+    background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #f5f0ff
+    );
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,0.8);
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.caracteristica__contenido {
+    flex: 1;
+}
+
+.caracteristica__contenido h3 {
+    margin: 0 0 12px;
+
+    font-size: 1.45rem;
+    font-weight: 750;
+
+    color: #172033;
+}
+
+.caracteristica__contenido p {
+    margin: 0;
+
+    max-width: 520px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: #697386;
+}
+
+
+/* =========================================================
+   DETALLE DECORATIVO
+   ========================================================= */
+
+.caracteristica::after {
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    right: -70px;
+    bottom: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(70, 110, 255, 0.045);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   COLORES DIFERENTES PARA LOS ICONOS
+   ========================================================= */
+
+.caracteristica:nth-child(1) .caracteristica__icono {
+    background: linear-gradient(135deg, #e7f0ff, #dce8ff);
+}
+
+.caracteristica:nth-child(2) .caracteristica__icono {
+    background: linear-gradient(135deg, #f0e8ff, #e7dcff);
+}
+
+.caracteristica:nth-child(3) .caracteristica__icono {
+    background: linear-gradient(135deg, #e4f9f1, #d5f4e8);
+}
+
+.caracteristica:nth-child(4) .caracteristica__icono {
+    background: linear-gradient(135deg, #fff3dc, #ffe8bd);
+}
+
+.caracteristica:nth-child(5) .caracteristica__icono {
+    background: linear-gradient(135deg, #e8edff, #dce2ff);
+}
+
+.caracteristica:nth-child(6) .caracteristica__icono {
+    background: linear-gradient(135deg, #ffe8f0, #ffdce8);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .caracteristicas {
+        margin: 80px auto;
+    }
+
+    .caracteristicas__header {
+        margin-bottom: 55px;
+    }
+
+    .caracteristica {
+        width: 82%;
+        min-height: 190px;
+        padding: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / MÓVIL
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .caracteristicas {
+        width: 90%;
+        margin: 65px auto;
+    }
+
+    .caracteristicas__header {
+        margin-bottom: 40px;
+    }
+
+    .caracteristicas__header h2 {
+        font-size: 2rem;
+    }
+
+    .caracteristicas__header p {
+        font-size: 0.95rem;
+    }
+
+    .caracteristicas__grid {
+        gap: 24px;
+    }
+
+    .caracteristica,
+    .caracteristica:nth-child(odd),
+    .caracteristica:nth-child(even) {
+        width: 100%;
+        align-self: center;
+
+        min-height: auto;
+
+        padding: 28px;
+
+        gap: 22px;
+
+        border-radius: 20px;
+    }
+
+    .caracteristica__icono {
+        flex: 0 0 70px;
+        width: 70px;
+        height: 70px;
+
+        border-radius: 18px;
+
+        font-size: 2rem;
+    }
+
+    .caracteristica__contenido h3 {
+        font-size: 1.2rem;
+    }
+
+    .caracteristica__contenido p {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .caracteristica,
+    .caracteristica:nth-child(odd),
+    .caracteristica:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px;
+    }
+
+    .caracteristica__icono {
+        width: 64px;
+        height: 64px;
+        flex-basis: 64px;
+    }
+
+}
